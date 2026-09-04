@@ -14,7 +14,13 @@ public class Main {
             int edad = input.nextInt();
 
         Estudiante estudiante = new Estudiante(nombre, carrera, edad);
-        estudiante.mostrarInformacion();
 
+        if (edad >=  18) {
+            System.out.println("Acceso autorizado");
+        } else {
+            System.out.println("Acceso restringido");
+        }
+        
+        estudiante.mostrarInformacion();
         }
     }
